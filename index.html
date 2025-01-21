@@ -22,10 +22,19 @@
 
             .content {
                 margin-top: 22px;
+                display: flex;
+                justify-content: center;
             }
 
             .footer {
                 margin-top: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                display: inline-block;
             }
 
             /* header */
@@ -59,6 +68,8 @@
                 margin-bottom: auto;
                 border-radius: 30px;
                 zoom: 70%;
+                display: inline-block;
+                background-position: center;
             }
 
             .overlay-med {
@@ -80,8 +91,24 @@
             .num-font {
                 font-size: 50px;
                 color: rgba(255, 255, 255, 0.8);
-                margin-left: 5px;
+                padding-left: 5px;
                 margin-bottom: auto;
+            }
+
+            #img-l1 {
+                background-image: url("images/img-left1.png");
+            }
+
+            #img-l2 {
+                background-image: url("images/img-left2.png");
+            }
+
+            #img-r1 {
+                background-image: url("images/img-right1.png");
+            }
+
+            #img-r2 {
+                background-image: url("images/img-right2.png");
             }
 
             /* circle frame */
@@ -96,6 +123,8 @@
                 margin-left: 5px;
                 border-radius: 320px;
                 zoom: 115%;
+                display: inline-block;
+                background-position: center;
             }
 
             .overlay-large {
@@ -114,6 +143,10 @@
                 margin: auto;
                 display: flex;
                 border-radius: 360px;
+            }
+
+            #img-m {
+                background-image: url("images/img-middle.png");
             }
 
             /* footer */
@@ -153,17 +186,22 @@
         <!-- content -->
         <div class="content content-margin">
             <!-- left square images -->
-            <div class="medium overlay-med inner-border num-font">
-                <img src = "images\img-left1.png">
-                <img src = "images\img-left2.png">
-            </div>
-            <div class="large overlay-large inner-border-large">
-                <img src = "images\img-middle.png">
-            </div>
+            <span class="medium overlay-med" id="img-l1"><span class="inner-border num-font">1</span></span>
+            <span class="medium overlay-med" id="img-l2"><span class="inner-border num-font">2</span></span>
+            <!-- middle circle image -->
+            <span class="large overlay-large" id="img-m"><span class="inner-border-large"></span></span>
             <!-- right square images -->
-            <div class="medium overlay-med inner-border num-font">
-                <img src = "images\img-right1.png">
-                <img src = "images\img-right2.png">
+            <span class="medium overlay-med" id="img-r1"><span class="inner-border num-font">4</span></span>
+            <span class="medium overlay-med" id="img-r2"><span class="inner-border num-font">5</span></span>
+        </div>
+        <div class="footer">
+            <div id="desc-title">3. AT THE CROSSROADS</div>
+            <div id="divider"></div>
+            <div class="description">
+                This is a gallery containing art by Yuumei. This particular piece is called "At the
+                Crossroads". According to her, she was inspired by Makoto Shinkai's paintover
+                works. This is actually a paintover of an actual crossroad photo taken in Japan.
+                You can visit <span id="website">yuumei.com</span> if you're interested in her other works.
             </div>
         </div>
     </body>
